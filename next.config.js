@@ -1,5 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  images: {
+    unoptimized: true,
+  },
+  assetPrefix: '/awesomecoolraj.github.io/',
+  basePath: '/awesomecoolraj.github.io',
   reactStrictMode: true,
   swcMinify: true,
   async headers() {
